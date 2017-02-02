@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         
         textView_permission = (TextView) findViewById(R.id.textView_permission);
         if(ContextCompat.checkSelfPermission(thisActivity,Manifest.permission.READ_EXTERNAL_STORAGE )
-                != PackageManager.PERMISSION_GRANTED){
+                == PackageManager.PERMISSION_GRANTED){
             textView_permission.setText("Permission Permitted");
         }
         
